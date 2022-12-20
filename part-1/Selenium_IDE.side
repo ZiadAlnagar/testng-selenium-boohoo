@@ -1,0 +1,176 @@
+{
+  "id": "4a513aed-2cf6-459d-a117-8ee1834b7b07",
+  "version": "2.0",
+  "name": "Boohoo",
+  "url": "https://www.boohoo.com/",
+  "tests": [{
+    "id": "3bf9de20-3425-471e-b5a4-a13cf741495e",
+    "name": "TC14_add_to_wish_list",
+    "commands": [{
+      "id": "de406d61-8879-4563-a844-761b62458147",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b74a41d0-a66d-474c-b3b4-a76f8118a3b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1040x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ba28307-2dac-4225-a2bb-42cc74eb9001",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='header-search-input']",
+      "targets": [
+        ["id=header-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-input", "css:finder"],
+        ["xpath=//input[@id='header-search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='search-box-dialog']/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "433bcea4-76ab-4816-80fe-82ff189c0f29",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='header-search-input']",
+      "targets": [
+        ["id=header-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-input", "css:finder"],
+        ["xpath=//input[@id='header-search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='search-box-dialog']/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gzz00235"
+    }, {
+      "id": "97c8545e-695d-4288-9632-5ca1f3e8f479",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=header-search-input",
+      "targets": [
+        ["id=header-search-input", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-input", "css:finder"],
+        ["xpath=//input[@id='header-search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='search-box-dialog']/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a242580a-6c8c-4ad8-950f-f01ce92a16d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m-outline > span",
+      "targets": [
+        ["css=.m-outline > span", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div/main/div[4]/div[2]/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ac9832a-166f-4def-8d9f-c17e05cc7e82",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.b-global_alerts-item",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "4a298647-c6c8-4dfb-b70f-ec9776400b9b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.b-global_alerts-item",
+      "targets": [],
+      "value": "Product added to wish list"
+    }]
+  }, {
+    "id": "42c9668b-8aa1-4506-83a4-8cc3639ee4bf",
+    "name": "TC15_remove_from_wish_list",
+    "commands": [{
+      "id": "d72081d0-f138-430b-b6aa-210f0bd90598",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dbc1771-448a-4e43-b3a4-caa649d36e49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1040x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c1d9ef3-6985-4d5a-be60-b9e9b34b28da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-header_wishlist-icon",
+      "targets": [
+        ["css=.b-header_wishlist-icon", "css:finder"],
+        ["xpath=//header[@id='page-head']/div[2]/div/div[3]/div/div[5]/a/span", "xpath:idRelative"],
+        ["xpath=//div[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'01')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f305113a-8c81-44ee-bb8f-e860f0626ecf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@data-product-id, 'GZZ00235')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d47d51c-efec-4882-9d3d-ea8f35ff8974",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.b-global_alerts-item",
+      "targets": [],
+      "value": "Product removed"
+    }]
+  }, {
+    "id": "5aba14d0-46db-4e9e-a3c0-f02155714feb",
+    "name": "TC16_view_wishList",
+    "commands": [{
+      "id": "66caa0a1-e1e4-4f7d-8d38-cbcf574f4833",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f105f53-9718-4eba-ac87-e9cf296f8947",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-header_wishlist-icon",
+      "targets": [
+        ["css=.b-header_wishlist-icon", "css:finder"],
+        ["xpath=//header[@id='page-head']/div[2]/div/div[3]/div/div[5]/a/span", "xpath:idRelative"],
+        ["xpath=//div[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'01')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c16e9b64-82fe-4266-8cad-02d32faa041e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.b-page_title",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c5f7ffaf-02a4-437b-af62-7969e6bf0533",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3bf9de20-3425-471e-b5a4-a13cf741495e", "5aba14d0-46db-4e9e-a3c0-f02155714feb", "42c9668b-8aa1-4506-83a4-8cc3639ee4bf"]
+  }],
+  "urls": ["https://www.boohoo.com/"],
+  "plugins": []
+}

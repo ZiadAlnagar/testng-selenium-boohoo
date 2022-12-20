@@ -1,0 +1,24 @@
+<html><head><title>testng.xml for All Test Suite</title></head><body><tt>&lt;?xml&nbsp;version="1.0"&nbsp;encoding="UTF-8"?&gt;./part-1./part-1
+<br/>&lt;!DOCTYPE&nbsp;suite&nbsp;SYSTEM&nbsp;"https://testng.org/testng-1.0.dtd"&gt;
+<br/>&lt;suite&nbsp;name="All&nbsp;Test&nbsp;Suite"&nbsp;guice-stage="DEVELOPMENT"&gt;
+<br/>&nbsp;&nbsp;&lt;test&nbsp;thread-count="5"&nbsp;name="./part-1"&nbsp;verbose="2"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;classes&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;class&nbsp;name="TestNG.AddToWishList"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="AddItemToWishlist"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/class&gt;&nbsp;&lt;!--&nbsp;TestNG.AddToWishList&nbsp;--&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;class&nbsp;name="TestNG.RemoveFromWishList"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="RemoveItemFromWishlist"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/class&gt;&nbsp;&lt;!--&nbsp;TestNG.RemoveFromWishList&nbsp;--&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;class&nbsp;name="TestNG.ViewWishlist"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="ViewWishlist"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/class&gt;&nbsp;&lt;!--&nbsp;TestNG.ViewWishlist&nbsp;--&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/classes&gt;
+<br/>&nbsp;&nbsp;&lt;/test&gt;&nbsp;&lt;!--&nbsp;./part-1&nbsp;--&gt;
+<br/>&lt;/suite&gt;&nbsp;&lt;!--&nbsp;All&nbsp;Test&nbsp;Suite&nbsp;--&gt;
+<br/></tt></body></html>

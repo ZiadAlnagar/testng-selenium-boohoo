@@ -1,0 +1,208 @@
+{
+  "id": "4451eb83-9b34-42d9-96d3-ef03cc9d441d",
+  "version": "2.0",
+  "name": "Boohoo",
+  "url": "https://www.boohoo.com/",
+  "tests": [{
+    "id": "e79d792d-210a-4832-aab9-26149be713c4",
+    "name": "add_to_cart",
+    "commands": [{
+      "id": "f5e37e4d-8f92-4827-9a31-c397189adf7d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55e00918-3e54-40b4-b780-f1b66ee735a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MENS",
+      "targets": [
+        ["linkText=MENS", "linkText"],
+        ["css=.b-menu_bar-tab:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'MENS')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-navigation']/div/div/div/div[4]/nav/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/mens')])[3]", "xpath:href"],
+        ["xpath=//div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df1e29a6-8294-4a68-92da-55ee2606c816",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[3]/div/div/div/div/a/picture/img",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "921f9891-541c-4363-8760-c698a1b18772",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div/div/div/a/picture/img",
+      "targets": [
+        ["css=.l-cols-item_4_m:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='man posing in black jacket blue jeans.']", "xpath:img"],
+        ["xpath=//div[@id='maincontent']/div/main/div[3]/div/div/div/div/a/picture/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "084def0d-a74c-4fde-a566-40d196d36e10",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Yellow Short Sleeve Utility Stitch Gathered Shirt']",
+      "targets": [
+        ["css=.b-product_tile:nth-child(5) .b-product_tile-image_image", "css:finder"],
+        ["xpath=//img[@alt='Yellow Short Sleeve Utility Stitch Gathered Shirt']", "xpath:img"],
+        ["xpath=//div[@id='product-grid']/div[2]/section/div/div/div/a/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b54e0933-d1e2-45a9-bbef-004c325209e2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[3]/span/span",
+      "targets": [
+        ["css=#variation-swatch-button-1-56 .b-variation_swatch-value_text", "css:finder"],
+        ["xpath=//button[@id='variation-swatch-button-1-56']/span/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e83c42d8-2e83-46ca-a1e6-d4482ba6e714",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[29]",
+      "targets": [
+        ["css=.b-product_addtocard:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[29]", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div/main/div[4]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e482f58e-5906-4cc4-a419-60c52240eb42",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.b-minicart",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "57f9d5ea-de58-4795-b098-da42d4a6a822",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@alt='Yellow Short Sleeve Utility Stitch Gathered Shirt']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "21512d9c-814a-4d6a-9d21-6848f6ebbcd5",
+    "name": "remove_from_cart",
+    "commands": [{
+      "id": "d5a78eb0-7930-43c5-ab39-bfd59c715a6f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49f93613-941b-4407-97c4-8d5728912f93",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://www.boohoo.com/cart')]",
+      "targets": [
+        ["linkText=12", "linkText"],
+        ["css=.b-minicart_icon-link", "css:finder"],
+        ["xpath=//header[@id='page-head']/div[2]/div/div[3]/div/div[6]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.boohoo.com/cart')]", "xpath:href"],
+        ["xpath=//div[6]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba21760b-0704-4b2a-af2e-29c4f7a6d392",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@alt='Yellow Short Sleeve Utility Stitch Gathered Shirt']",
+      "targets": [
+        ["css=#minicart_item_dae56dcfe3ad4704626b0524e2 .b-minicart_product-link .b-minicart_product-picture_image", "css:finder"],
+        ["xpath=//img[@alt='Yellow Short Sleeve Utility Stitch Gathered Shirt']", "xpath:img"],
+        ["xpath=//div[@id='minicart_item_dae56dcfe3ad4704626b0524e2']/section/div[3]/a/picture/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8829c030-9e04-4fab-8660-9179c9234ed8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-minicart_product-remove_btn",
+      "targets": [
+        ["css=.b-minicart_product-remove_btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[66]", "xpath:attributes"],
+        ["xpath=//div[@id='minicart_item_40d4c720cb866a5864f138a218']/section/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": "xpath=//div[@id='minicart_item_dae56dcfe3ad4704626b0524e2']/section/div[7]/button"
+    }]
+  }, {
+    "id": "5eef90af-25e1-4910-b71b-10719866593d",
+    "name": "view_cart",
+    "commands": [{
+      "id": "a27796d9-09cb-469c-8036-5cfa65909092",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82d466c8-e150-4713-bec0-4d15304f0d9a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://www.boohoo.com/cart')]",
+      "targets": [
+        ["linkText=12", "linkText"],
+        ["css=.b-minicart_icon-link", "css:finder"],
+        ["xpath=//header[@id='page-head']/div[2]/div/div[3]/div/div[6]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.boohoo.com/cart')]", "xpath:href"],
+        ["xpath=//div[6]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ebd51c-bc86-4272-abbd-4472ecfe0e9b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(text(),'View cart')]",
+      "targets": [
+        ["css=.m-outline:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'View cart')]", "xpath:link"],
+        ["xpath=//body[@id='page-body']/div[15]/div/div/div/div/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.boohoo.com/cart')])[2]", "xpath:href"],
+        ["xpath=//div[15]/div/div/div/div/div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4cc3c58-a53c-417a-95fb-0128afe6155c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'View cart')]",
+      "targets": [
+        ["css=.m-outline:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'View cart')]", "xpath:link"],
+        ["xpath=//body[@id='page-body']/div[15]/div/div/div/div/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.boohoo.com/cart')])[2]", "xpath:href"],
+        ["xpath=//div[15]/div/div/div/div/div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cad01b5f-bc05-4560-bf56-7670f88ff7fd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e79d792d-210a-4832-aab9-26149be713c4"]
+  }],
+  "urls": ["https://www.boohoo.com/"],
+  "plugins": []
+}
